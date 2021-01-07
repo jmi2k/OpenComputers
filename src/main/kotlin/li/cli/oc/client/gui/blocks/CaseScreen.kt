@@ -30,7 +30,7 @@ class CaseScreen(handler: ScreenHandler?, inventory: PlayerInventory?, title: Te
         client!!.textureManager.bindTexture(SLOT_TEXTURE)
         val tier = (handler as CaseScreenHandler).tier
 
-        drawTexture(matrices, x + 42, y + 34, 0, 0, 18, 18)
+        drawTexture(matrices, x + 42, y + 34, 0f, 0f, 18, 18, 18, 18)
 
         drawInvSlots(tier!!, x, y) // Tier should almost certainly be set by the time we are drawing the background
     }
@@ -75,16 +75,16 @@ class CaseScreen(handler: ScreenHandler?, inventory: PlayerInventory?, title: Te
         val xOffset = 93
         val yOffset = 12
 
-        //drawTexture(invSlotMatrix, x + xOffset, y + yOffset, 0, 0, 18, 18)
+        //drawTexture(invSlotMatrix, x + xOffset, y + yOffset, 0, 0, 18, 18, 18, 18)
 
-        drawTexture(invSlotMatrix, x + xOffset + 3, y + yOffset + 3, 0, 0, 18, 18)
-        drawTexture(invSlotMatrix, x + xOffset + 3, y + yOffset + 21, 0, 0, 18, 18)
+        drawTexture(invSlotMatrix, x + xOffset + 3, y + yOffset + 3, 0f, 0f, 18, 18, 18, 18)
+        drawTexture(invSlotMatrix, x + xOffset + 3, y + yOffset + 21, 0f, 0f, 18, 18, 18, 18)
 
-        drawTexture(invSlotMatrix, x + xOffset + 3 + 18 + 5, y + yOffset + 3, 0, 0, 18, 18)
-        drawTexture(invSlotMatrix, x + xOffset + 3 + 18 + 5, y + yOffset + 21, 0, 0, 18, 18)
-        drawTexture(invSlotMatrix, x + xOffset + 3 + 18 + 5, y + yOffset + 39, 0, 0, 18, 18)
+        drawTexture(invSlotMatrix, x + xOffset + 3 + 18 + 5, y + yOffset + 3, 0f, 0f, 18, 18, 18, 18)
+        drawTexture(invSlotMatrix, x + xOffset + 3 + 18 + 5, y + yOffset + 21, 0f, 0f, 18, 18, 18, 18)
+        drawTexture(invSlotMatrix, x + xOffset + 3 + 18 + 5, y + yOffset + 39, 0f, 0f, 18, 18, 18, 18)
 
-        drawTexture(invSlotMatrix, x + xOffset + 3 + 36 + 10, y + yOffset + 3, 0, 0, 18, 18)
+        drawTexture(invSlotMatrix, x + xOffset + 3 + 36 + 10, y + yOffset + 3, 0f, 0f, 18, 18, 18, 18)
     }
 
     companion object {
